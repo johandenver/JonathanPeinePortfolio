@@ -4,7 +4,8 @@ class Home extends React.Component {
   render() {
     return (
       <header className="App-header">
-        <p>Hello World! Welcome to Jonathan Peine's site!</p>
+        <h1>Jonathan Peine</h1>
+        <p>Welcome to my site. </p>
       </header>
     );
   }

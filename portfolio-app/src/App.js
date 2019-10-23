@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Photography from "./pages/Photography";
 import "./App.css";
 
 class App extends React.Component {
@@ -24,6 +25,11 @@ class App extends React.Component {
                 exact
                 path="/projects"
                 render={props => <Projects {...props} />}
+              />
+              <Route
+                exact
+                path="/photography"
+                render={props => <Photography {...props} />}
               />
             </Switch>
           </main>

@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 import "./App.css";
 
 class App extends React.Component {
@@ -13,6 +15,16 @@ class App extends React.Component {
           <main>
             <Switch>
               <Route exact path="/" render={props => <Home {...props} />} />
+              <Route
+                exact
+                path="/about"
+                render={props => <About {...props} />}
+              />
+              <Route
+                exact
+                path="/projects"
+                render={props => <Projects {...props} />}
+              />
             </Switch>
           </main>
         </Router>
